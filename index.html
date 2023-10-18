@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9df551001.js" crossorigin="anonymous"></script>
     <title>WILL DO</title>
 </head>
@@ -19,20 +19,25 @@
                 <i class="fa-solid fa-dolly fa-lg" style="color: #7f7f7f;"></i>
                 <p>Will-Do</p>
             </div>
-    
-            <input id="userInput" type="text" placeholder="Add a Task. Press Enter to save">
-    
-            <div class="todoLists">
-                <input type="checkbox" id="todoList" name="todoList" value="">
-                <label for="todoList">Design a todo app</label>
+
+            <div class="inputField">
+                <input id="userInput" type="text" placeholder="Add a Task">
+                <button id="addBtn" type="button">Add</button>
+            </div>
+
+            <div>
+                <ul class="todoLists">
+                    <li><input type="checkbox" id="todoList" name="todoList" value=""></li>
+                </ul>
+
                 <i class="fa-regular fa-trash-can"></i>
             </div>
         </div>
-        
+
 
 
     </main>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
