@@ -85,6 +85,26 @@ main {
   gap: 1rem;
 }
 
+.appName {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.appName i {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.appName p {
+  font-weight: 700;
+}
+
+i {
+  cursor: pointer;
+}
+
 .inputField {
   display: flex;
   gap: 1rem;
@@ -107,6 +127,7 @@ main {
 }
 
 #userInput {
+  width: 100%;
   border: none;
   border-radius: 0.25rem;
   padding: 0 1rem;
@@ -114,32 +135,41 @@ main {
   color: #2b2b2b;
 }
 
-.appName {
+#todoLists {
+  padding: 0;
+}
+
+.todoList {
   display: flex;
+  gap: 1rem;
   align-items: center;
-  gap: 0.5rem;
+
+  list-style-type: none;
+  user-select: none;
   cursor: pointer;
+
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
 }
 
-.appName i {
-  font-weight: 900;
-  font-size: 1.2rem;
+.todoList::before {
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  background-image: url(./images/square-regular.svg);
+  background-size: cover;
+  background-position: center;
 }
 
-.appName p {
-  font-weight: 700;
-}
-
-#userInput {
-  width: 100%;
-}
-
-.todoLists {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-}
-
-i {
-  cursor: pointer;
+.todoList::after {
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  right: 0;
+  background-image: url(./images/trash-can-regular.svg);
+  background-size: contain;
+  background-position: center;
 }
