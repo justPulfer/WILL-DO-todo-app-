@@ -2,10 +2,14 @@ const userInput = document.getElementById("userInput");
 const addBtn = document.getElementById("addBtn");
 const todoLists = document.getElementById("todoLists");
 
-addBtn.addEventListener("click", (e) => {
-    const list = document.createElement("li");
-    list.appendChild(userInput.value);
-    todoLists.appendChild(list);
-    console.log(list);
-})
+function addWillDo() {
+    if (userInput.value) {
+        let list = document.createElement("li");
+        list.innerHTML = userInput.value;
+        todoLists.appendChild(list);
+        userInput.value = '';
+        
+    }
+}
 
+addBtn.addEventListener("click", addWillDo);
