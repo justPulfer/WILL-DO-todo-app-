@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>WILL DO</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e9df551001.js" crossorigin="anonymous"></script>
-    <title>WILL DO</title>
-</head>
+	<body>
+		<main>
+			<!-- logo and app name -->
+			<div class="mainContainer">
+				<div class="appName">
+					<p>Will-Do</p>
+				</div>
 
-<body>
-    <main>
-        <div class="mainContainer">
-            <div class="appName">
-                <i class="fa-solid fa-dolly fa-lg" style="color: #7f7f7f;"></i>
-                <p>Will-Do</p>
-            </div>
+				<!-- input field -->
+				<div class="inputField">
+					<input id="userInput" type="text" placeholder="Add a Task" />
+					<button id="addBtn" type="button">Add</button>
+				</div>
 
-            <div class="inputField">
-                <input id="userInput" type="text" placeholder="Add a Task">
-                <button id="addBtn" type="button">Add</button>
-            </div>
-
-            <div id="todoListsContainer">
-                <ul id="todoLists"></ul>
-            </div>
-
-        </div>
-
-
-
-    </main>
-    <script src="app.js"></script>
-</body>
-
+				<!-- added tasks -->
+				<div id="todoListsContainer">
+					<ul id="todoLists">
+						<!-- js to display lists -->
+					</ul>
+				</div>
+			</div>
+		</main>
+		<script src="app.js"></script>
+	</body>
 </html>
