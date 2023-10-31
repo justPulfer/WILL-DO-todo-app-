@@ -173,11 +173,14 @@ input[type="checkbox"] {
 }
 
 .completedSection p {
-	display: none;
 	font-size: 0.8rem;
 	font-weight: 700;
 }
 
 #completedList {
 	padding: 0;
+}
+
+#completedTag {
+	display: none;
 }
