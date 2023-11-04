@@ -1,2 +1,2 @@
-# WILL-DO-todo-app-
+# WILL-DO
 A todo app for things that you "WILL-DO".
