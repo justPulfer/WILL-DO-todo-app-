@@ -172,12 +172,17 @@ input[type="checkbox"] {
 	transition: all 200ms ease-in-out;
 }
 
-.completedSection p {
-	display: none;
+#completedList {
+	padding: 0;
+}
+
+#completedList::before {
+	content: "Completed";
+	display: block;
 	font-size: 0.8rem;
 	font-weight: 700;
 }
 
-#completedList {
-	padding: 0;
+#completedList:empty::before {
+	display: none;
 }
