@@ -4,8 +4,9 @@ const unorderedList = document.getElementById("todoLists");
 const completedList = document.getElementById("completedList");
 
 // Trash btn
-const trashSVG =
-	'<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #f01515;transform: ;msFilter:;"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>';
+const trashSVG = document.createElement("I");
+trashSVG.classList.add("bx", "bx-trash");
+trashSVG.style.color = "#ff0000";
 
 // Function to create a new list item with a checkbox and trash button
 function createListItem(text) {
@@ -18,7 +19,7 @@ function createListItem(text) {
 	label.textContent = text;
 
 	const trashButton = document.createElement("button");
-	trashButton.innerHTML = trashSVG;
+	trashButton.appendChild(trashSVG);
 	trashButton.classList.add("listItemBtn", "trashBtn");
 
 	// event listener to delete listItem when the trashBtn is clicked
@@ -60,3 +61,9 @@ inputTag.addEventListener("keydown", (e) => {
 		addItem();
 	}
 });
+
+// Arrow function to sum up 14 and 26
+
+const sum = () => {
+	return sum(14, 26);
+};
