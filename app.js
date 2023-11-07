@@ -61,9 +61,3 @@ inputTag.addEventListener("keydown", (e) => {
 		addItem();
 	}
 });
-
-// Arrow function to sum up 14 and 26
-
-const sum = () => {
-	return sum(14, 26);
-};
