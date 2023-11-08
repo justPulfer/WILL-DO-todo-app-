@@ -3,11 +3,6 @@ const addBtn = document.getElementById("addBtn");
 const unorderedList = document.getElementById("todoLists");
 const completedList = document.getElementById("completedList");
 
-// Trash btn
-const trashSVG = document.createElement("I");
-trashSVG.classList.add("bx", "bx-trash");
-trashSVG.style.color = "#ff0000";
-
 // Function to create a new list item with a checkbox and trash button
 function createListItem(text) {
 	const listItem = document.createElement("li");
@@ -18,7 +13,11 @@ function createListItem(text) {
 	const label = document.createElement("label");
 	label.textContent = text;
 
+	// Trash btn
 	const trashButton = document.createElement("button");
+	const trashSVG = document.createElement("I");
+	trashSVG.classList.add("bx", "bx-trash");
+	trashSVG.style.color = "#ff0000";
 	trashButton.appendChild(trashSVG);
 	trashButton.classList.add("listItemBtn", "trashBtn");
 
